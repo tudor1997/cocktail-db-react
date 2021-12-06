@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color:#e9edc9;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1e6091;
+    border-radius:5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ca6702;
+  }
+.section{
+    width:100%;
+    min-height:80vh;
+    
+}
+
+@import './navbar.scss';
+@import './about.scss';
+@import './error.scss';
+@import './home.scss';
+@import './cocktailDetails.scss';

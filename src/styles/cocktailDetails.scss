@@ -1,0 +1,137 @@
+.null{
+    width:100%;
+    text-align:center;
+    font-size:24px;
+    color:#184e77;
+    width:100%;
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.loading-title{
+    font-size:30px;
+    width:100%;
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    letter-spacing:2px;
+    color:#184e77;
+    font-weight: 700;
+    animation:loading 1s ease infinite alternate;
+}
+@keyframes loading {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.details-section{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    padding:50px;
+    align-items:center;
+    h1{
+        font-size:30px;
+        font-family:'Merriweather', serif;
+        font-weight: 700;
+        margin-bottom:60px;
+        letter-spacing:2px;
+        text-shadow:0 0 2px #000;
+    }
+    .back-btn{
+        border:none;
+        margin-top:15px;
+        width:150px;
+        background-color:#fb8500;
+        color:black;
+        font-weight: 500;
+        border-radius:6px;
+        text-align: center;
+        padding:6px 10px;
+        font-weight: 600;
+        font-size:20px;
+        transition: all .4s ease;
+        margin-bottom:20px;
+        &:hover{
+            color:white;
+            background-color:#023047;
+        }
+    }
+    .details-container{
+        display:flex;
+        width:100%;
+        height:90vh;
+        
+        .img-container{
+            width: 50%;
+            height:100%;
+            img{
+                width:95%;
+                height:95%;
+                object-fit:cover;
+                border-radius:10px;
+                box-shadow:0 0 2px #111;
+            }
+        }
+        .info{
+            width: 50%;
+            height:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-evenly;
+            font-size:18px;
+            font-weight: 600;
+           p{
+               span{
+                   color:#184e77;
+               }
+           }
+             .ingredients{
+                 display:flex;
+                 span{
+                    color:#184e77;
+                }
+                 li{
+                     margin-left:10px;
+                    
+                 }
+             }
+        }
+        @media screen and (max-width:780px){
+            flex-direction:column;
+            .img-container{
+                width:100%;
+            }
+            .info{
+                width:100%;
+                padding-bottom:20px;
+                p{
+                    margin-top:10px;
+                }
+                ul{
+                    margin-top:10px;
+                }
+            
+            }
+        }
+        @media screen and (max-width:580px){
+            .info{
+                font-size:15px;
+                .ingredients{
+                    flex-direction:column;
+                    
+                    li{
+                        margin-top:7px;
+                   
+                    }
+                }
+            }
+        }
+    }
+}
